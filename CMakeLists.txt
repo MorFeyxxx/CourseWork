@@ -28,4 +28,6 @@ add_executable(CourseWork main.cpp
         DateAndAssessSys/DateAndAssessSys.h
         DateAndAssessSys/DateAndAssessSys.cpp
         MarkStatus.h
-        MarkStatus.h)
+        MarkStatus.h
+        Test/Test.h
+        Test/Test.cpp)
