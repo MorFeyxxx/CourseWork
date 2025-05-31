@@ -10,4 +10,6 @@ add_executable(CourseWork main.cpp
         Database/Database.h
         Database/Database.cpp
         University/University.h
-        University/University.cpp)
+        University/University.cpp
+        Institute/Institute.h
+        Institute/Institute.cpp)
