@@ -55,6 +55,12 @@ build CMakeFiles/CourseWork.dir/main.cpp.obj: CXX_COMPILER__CourseWork_unscanned
   OBJECT_DIR = CMakeFiles\CourseWork.dir
   OBJECT_FILE_DIR = CMakeFiles\CourseWork.dir
 
+build CMakeFiles/CourseWork.dir/ComponentBase/ComponentBase.cpp.obj: CXX_COMPILER__CourseWork_unscanned_Debug D$:/CourseWork/ComponentBase/ComponentBase.cpp || cmake_object_order_depends_target_CourseWork
+  DEP_FILE = CMakeFiles\CourseWork.dir\ComponentBase\ComponentBase.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CourseWork.dir
+  OBJECT_FILE_DIR = CMakeFiles\CourseWork.dir\ComponentBase
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CourseWork
@@ -63,7 +69,7 @@ build CMakeFiles/CourseWork.dir/main.cpp.obj: CXX_COMPILER__CourseWork_unscanned
 #############################################
 # Link the executable CourseWork.exe
 
-build CourseWork.exe: CXX_EXECUTABLE_LINKER__CourseWork_Debug CMakeFiles/CourseWork.dir/main.cpp.obj
+build CourseWork.exe: CXX_EXECUTABLE_LINKER__CourseWork_Debug CMakeFiles/CourseWork.dir/main.cpp.obj CMakeFiles/CourseWork.dir/ComponentBase/ComponentBase.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CourseWork.dir
