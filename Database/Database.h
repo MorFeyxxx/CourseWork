@@ -6,6 +6,7 @@
 #include <memory>
 #include "../json.hpp"
 #include "../ComponentBase/ComponentBase.h"
+#include "../University/University.h"
 
 using json = nlohmann::ordered_json;
 
