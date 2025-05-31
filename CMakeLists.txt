@@ -22,4 +22,6 @@ add_executable(CourseWork main.cpp
         AssessmentSystem/AssessmentSystem.h
         AssessmentSystem/AssessmentSystem.cpp
         AssessmentSystem/FivePointSystem/FivePointSystem.h
-        AssessmentSystem/FivePointSystem/FivePointSystem.cpp)
+        AssessmentSystem/FivePointSystem/FivePointSystem.cpp
+        AssessmentSystem/PassFailSystem/PassFailSystem.h
+        AssessmentSystem/PassFailSystem/PassFailSystem.cpp)
