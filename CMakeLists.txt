@@ -14,4 +14,6 @@ add_executable(CourseWork main.cpp
         Institute/Institute.h
         Institute/Institute.cpp
         Department/Department.h
-        Department/Department.cpp)
+        Department/Department.cpp
+        Group/Group.h
+        Group/Group.cpp)
