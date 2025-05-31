@@ -26,4 +26,6 @@ add_executable(CourseWork main.cpp
         AssessmentSystem/PassFailSystem/PassFailSystem.h
         AssessmentSystem/PassFailSystem/PassFailSystem.cpp
         DateAndAssessSys/DateAndAssessSys.h
-        DateAndAssessSys/DateAndAssessSys.cpp)
+        DateAndAssessSys/DateAndAssessSys.cpp
+        MarkStatus.h
+        MarkStatus.h)
