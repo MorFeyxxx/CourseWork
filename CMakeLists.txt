@@ -8,4 +8,6 @@ add_executable(CourseWork main.cpp
         ComponentBase/ComponentBase.h
         ComponentBase/ComponentBase.cpp
         Database/Database.h
-        Database/Database.cpp)
+        Database/Database.cpp
+        University/University.h
+        University/University.cpp)
