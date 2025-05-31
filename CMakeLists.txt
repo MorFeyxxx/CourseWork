@@ -30,4 +30,6 @@ add_executable(CourseWork main.cpp
         MarkStatus.h
         MarkStatus.h
         Test/Test.h
-        Test/Test.cpp)
+        Test/Test.cpp
+        Exam/Exam.h
+        Exam/Exam.cpp)

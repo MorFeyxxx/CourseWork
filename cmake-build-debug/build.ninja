@@ -127,6 +127,12 @@ build CMakeFiles/CourseWork.dir/Test/Test.cpp.obj: CXX_COMPILER__CourseWork_unsc
   OBJECT_DIR = CMakeFiles\CourseWork.dir
   OBJECT_FILE_DIR = CMakeFiles\CourseWork.dir\Test
 
+build CMakeFiles/CourseWork.dir/Exam/Exam.cpp.obj: CXX_COMPILER__CourseWork_unscanned_Debug D$:/CourseWork/Exam/Exam.cpp || cmake_object_order_depends_target_CourseWork
+  DEP_FILE = CMakeFiles\CourseWork.dir\Exam\Exam.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CourseWork.dir
+  OBJECT_FILE_DIR = CMakeFiles\CourseWork.dir\Exam
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CourseWork
@@ -135,7 +141,7 @@ build CMakeFiles/CourseWork.dir/Test/Test.cpp.obj: CXX_COMPILER__CourseWork_unsc
 #############################################
 # Link the executable CourseWork.exe
 
-build CourseWork.exe: CXX_EXECUTABLE_LINKER__CourseWork_Debug CMakeFiles/CourseWork.dir/main.cpp.obj CMakeFiles/CourseWork.dir/ComponentBase/ComponentBase.cpp.obj CMakeFiles/CourseWork.dir/Database/Database.cpp.obj CMakeFiles/CourseWork.dir/University/University.cpp.obj CMakeFiles/CourseWork.dir/Institute/Institute.cpp.obj CMakeFiles/CourseWork.dir/Department/Department.cpp.obj CMakeFiles/CourseWork.dir/Group/Group.cpp.obj CMakeFiles/CourseWork.dir/Student/Student.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/AssessmentSystem.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/FivePointSystem/FivePointSystem.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/PassFailSystem/PassFailSystem.cpp.obj CMakeFiles/CourseWork.dir/DateAndAssessSys/DateAndAssessSys.cpp.obj CMakeFiles/CourseWork.dir/Test/Test.cpp.obj
+build CourseWork.exe: CXX_EXECUTABLE_LINKER__CourseWork_Debug CMakeFiles/CourseWork.dir/main.cpp.obj CMakeFiles/CourseWork.dir/ComponentBase/ComponentBase.cpp.obj CMakeFiles/CourseWork.dir/Database/Database.cpp.obj CMakeFiles/CourseWork.dir/University/University.cpp.obj CMakeFiles/CourseWork.dir/Institute/Institute.cpp.obj CMakeFiles/CourseWork.dir/Department/Department.cpp.obj CMakeFiles/CourseWork.dir/Group/Group.cpp.obj CMakeFiles/CourseWork.dir/Student/Student.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/AssessmentSystem.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/FivePointSystem/FivePointSystem.cpp.obj CMakeFiles/CourseWork.dir/AssessmentSystem/PassFailSystem/PassFailSystem.cpp.obj CMakeFiles/CourseWork.dir/DateAndAssessSys/DateAndAssessSys.cpp.obj CMakeFiles/CourseWork.dir/Test/Test.cpp.obj CMakeFiles/CourseWork.dir/Exam/Exam.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CourseWork.dir
