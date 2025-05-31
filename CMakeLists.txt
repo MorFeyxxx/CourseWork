@@ -18,4 +18,6 @@ add_executable(CourseWork main.cpp
         Group/Group.h
         Group/Group.cpp
         Student/Student.h
-        Student/Student.cpp)
+        Student/Student.cpp
+        AssessmentSystem/AssessmentSystem.h
+        AssessmentSystem/AssessmentSystem.cpp)
