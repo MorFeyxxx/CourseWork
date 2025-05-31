@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(CourseWork main.cpp
         json.hpp
         ComponentBase/ComponentBase.h
-        ComponentBase/ComponentBase.cpp)
+        ComponentBase/ComponentBase.cpp
+        Database/Database.h
+        Database/Database.cpp)
