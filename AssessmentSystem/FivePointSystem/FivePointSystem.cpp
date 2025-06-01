@@ -3,7 +3,7 @@
 
 FivePointSystem::FivePointSystem() : AssessmentSystem("Пятибальная система", 2, 5) {}
 
-std::pair<bool, int> FivePointSystemevaluate(const std::vector<int>& marks) {
+std::pair<bool, int> FivePointSystem::evaluate(const std::vector<int>& marks) const {
     if (marks.empty()) {
         return {false, 0};
     }
