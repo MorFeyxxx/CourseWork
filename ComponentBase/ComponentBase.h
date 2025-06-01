@@ -37,6 +37,11 @@ public:
     virtual json to_json() const;
     virtual ~ComponentBase() = default;
 
+    virtual void change_mark_lab(int index, int mark);
+    virtual void change_mark_cgt(int index, int mark);
+    virtual void change_mark_cp(int mark);
+    virtual void change_mark_test(int mark);
+    virtual void change_mark_exam(int mark);
 };
 
 #endif //COMPONENTBASE_H

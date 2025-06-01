@@ -61,3 +61,9 @@ json ComponentBase::to_json() const {
 
     return j;
 }
+
+void ComponentBase::change_mark_lab(int index, int mark) {}
+void ComponentBase::change_mark_cgt(int index, int mark) {}
+void ComponentBase::change_mark_cp(int mark) {}
+void ComponentBase::change_mark_test(int mark) {}
+void ComponentBase::change_mark_exam(int mark) {}
