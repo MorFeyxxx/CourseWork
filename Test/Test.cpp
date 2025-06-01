@@ -29,7 +29,7 @@ void Test::print(int indent = 0) const{
     }
 }
 
-json Test::to_json() const override {
+json Test::to_json() const {
     json j;
     j["type"] = type;
     j["name"] = name;

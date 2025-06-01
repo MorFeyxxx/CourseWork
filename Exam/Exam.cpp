@@ -59,7 +59,7 @@ void Exam::print(int indent = 0) const{
     }
 }
 
-json Exam::to_json() const override {
+json Exam::to_json() const {
     json j;
     j["type"] = type;
     j["name"] = name;
