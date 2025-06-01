@@ -2,7 +2,7 @@
 
 
 Exam::Exam(const std::shared_ptr<AssessmentSystem> system, MarkStatus mark_ = MarkStatus::None): ComponentBase("", "Exam"),
-    DateAndAssessSys(system), mark(mark_) {}
+    MarkAndAssessSys(system, mark_) {}
 
 void Exam::set_mark(int new_mark) {
     if(new_mark == 0) {
@@ -29,9 +29,6 @@ void Exam::set_mark(int new_mark) {
                 break;
        }
     }
-}
-MarkStatus Exam::get_mark() const{
-    return mark;
 }
 
 void Exam::print(int indent = 0) const{
@@ -63,7 +60,6 @@ json Exam::to_json() const {
     json j;
     j["type"] = type;
     j["name"] = name;
-    j["date"] = date;
 
     switch (mark) {
         case MarkStatus::Great: j["mark"] = 5; break;
@@ -84,10 +80,6 @@ std::shared_ptr<Exam> Exam::from_json(const json& j) {
 
     if (j.contains("name")) {
         exam->change_name(j["name"].get<std::string>());
-    }
-
-    if (j.contains("date")) {
-        exam->change_date(j["date"].get<std::string>());
     }
 
     if (j.contains("mark")) {

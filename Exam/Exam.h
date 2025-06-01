@@ -3,20 +3,16 @@
 
 #include "../AssessmentSystem/AssessmentSystem.h"
 #include "../ComponentBase/ComponentBase.h"
-#include "../DateAndAssessSys/DateAndAssessSys.h"
+#include "../MarkAndAssessSys/MarkAndAssessSys.h"
 #include "../AssessmentSystem/FivePointSystem/FivePointSystem.h"
-#include "../MarkStatus.h"
 #include <string>
 #include <memory>
 
-class Exam: public ComponentBase, public DateAndAssessSys {
-    MarkStatus mark;
-
+class Exam: public ComponentBase, public MarkAndAssessSys {
 public:
     Exam(const std::shared_ptr<AssessmentSystem> system, MarkStatus mark_);
 
-    void set_mark(int new_mark);
-    MarkStatus get_mark() const;
+    void set_mark(int new_mark) override;
 
     void print(int indent) const override;
 

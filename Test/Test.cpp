@@ -1,16 +1,12 @@
 #include "Test.h"
 
 Test::Test(const std::shared_ptr<AssessmentSystem> system, MarkStatus mark_ = MarkStatus::None): ComponentBase("", "Test"),
-    DateAndAssessSys(system), mark(mark_) {}
+    MarkAndAssessSys(system, mark_) {}
 
 void Test::set_mark(int new_mark) {
     if(assessment_system->validate_mark(new_mark)) {
         mark = new_mark ? MarkStatus::Pass : MarkStatus::Fail;
     }
-}
-
-MarkStatus Test::get_mark() const{
-    return mark;
 }
 
 void Test::print(int indent = 0) const{
@@ -33,7 +29,6 @@ json Test::to_json() const {
     json j;
     j["type"] = type;
     j["name"] = name;
-    j["date"] = date;
 
     switch (mark) {
         case MarkStatus::Pass: j["mark"] = 1; break;
@@ -51,10 +46,6 @@ std::shared_ptr<Test> Test::from_json(const json& j) {
 
     if (j.contains("name")) {
         test->change_name(j["name"].get<std::string>());
-    }
-
-    if (j.contains("date")) {
-        test->change_date(j["date"].get<std::string>());
     }
 
     if (j.contains("mark")) {

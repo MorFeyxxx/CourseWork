@@ -1,7 +1,7 @@
 #include "CourseProject.h"
 
 CourseProject::CourseProject(const std::shared_ptr<AssessmentSystem> system, MarkStatus mark_ = MarkStatus::None):
-    ComponentBase("", "CourseProject"),assessment_system(system), mark(mark_) {}
+    ComponentBase("", "CourseProject"), MarkAndAssessSys(system, mark_) {}
 
 void CourseProject::set_mark(int new_mark) {
     if(new_mark == 0) {
@@ -28,9 +28,6 @@ void CourseProject::set_mark(int new_mark) {
                 break;
         }
     }
-}
-MarkStatus CourseProject::get_mark() const{
-    return mark;
 }
 
 void CourseProject::print(int indent = 0) const {

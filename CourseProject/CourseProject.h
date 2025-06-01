@@ -4,16 +4,13 @@
 #include "../AssessmentSystem/AssessmentSystem.h"
 #include "../ComponentBase/ComponentBase.h"
 #include "../MarkStatus.h"
+#include "../MarkAndAssessSys/MarkAndAssessSys.h"
 
-class CourseProject: public ComponentBase {
-    MarkStatus mark;
-    std::shared_ptr<AssessmentSystem> assessment_system;
-
+class CourseProject: public ComponentBase, public MarkAndAssessSys {
 public:
     CourseProject(const std::shared_ptr<AssessmentSystem> system, MarkStatus mark_);
 
-    void set_mark(int new_mark);
-    MarkStatus get_mark() const;
+    void set_mark(int new_mark) override;
 
     void print(int indent) const override;
 
