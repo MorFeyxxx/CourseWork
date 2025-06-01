@@ -21,7 +21,7 @@ class Discipline : public ComponentBase {
 public:
     Discipline(const std::string& name, const DisciplineConfig& config);
 
-    void print(int indent = 0) const override;
+    void print(int indent) const override;
 
     void change_mark_lab(int index, int mark);
     void change_mark_cgt(int index, int mark);
