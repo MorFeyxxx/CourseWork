@@ -34,4 +34,6 @@ add_executable(CourseWork main.cpp
         Exam/Exam.h
         Exam/Exam.cpp
         CourseProject/CourseProject.h
-        CourseProject/CourseProject.cpp)
+        CourseProject/CourseProject.cpp
+        LaboratoryWorks/LaboratoryWorks.h
+        LaboratoryWorks/LaboratoryWorks.cpp)
