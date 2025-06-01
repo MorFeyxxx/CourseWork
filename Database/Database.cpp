@@ -9,7 +9,7 @@ Database& Database::get_instance() {
     return *instance;
 }
 
-void Database::set_data(const std::shared_ptr<ComponentBase> new_data) {
+void Database::set_data(const std::shared_ptr<University> new_data) {
     db_ptr = new_data;
 }
 

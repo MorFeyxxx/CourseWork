@@ -5,14 +5,13 @@
 #include <fstream>
 #include <memory>
 #include "../json.hpp"
-#include "../ComponentBase/ComponentBase.h"
 #include "../University/University.h"
 
 using json = nlohmann::ordered_json;
 
 class Database {
     json db;
-    std::shared_ptr<ComponentBase> db_ptr;
+    std::shared_ptr<University> db_ptr;
     static std::unique_ptr<Database> instance;
 
     Database() = default;
@@ -23,7 +22,7 @@ public:
 
     static Database& get_instance();
 
-    void set_data(const std::shared_ptr<ComponentBase> new_data);
+    void set_data(const std::shared_ptr<University> new_data);
 
     void save(const std::string& path);
     void load(const std::string& path);
