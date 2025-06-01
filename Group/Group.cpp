@@ -1,7 +1,7 @@
 #include "Group.h"
 #include "../Student/Student.h"
 
-Group::Group(const std::string& name) : ComponentBase(name, "Group") {}
+Group::Group(const std::string& name): ComponentBase(name, "Group") {}
 
 void Group::print(int indent = 0) const {
     std::cout << std::string(indent, ' ') << "Группа: " << name << "\n";

@@ -7,7 +7,7 @@
 #include <memory>
 #include <iostream>
 
-class CalcGraphTask : public ComponentBase {
+class CalcGraphTask: public ComponentBase {
 protected:
     std::shared_ptr<AssessmentSystem> assessment_system;
     std::vector<int> marks;

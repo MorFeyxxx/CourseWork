@@ -1,7 +1,7 @@
 #include "University.h"
 #include "../Institute/Institute.h"
 
-University::University(const std::string& name) : ComponentBase(name, "University") {}
+University::University(const std::string& name): ComponentBase(name, "University") {}
 
 void University::print(int indent = 0) const {
     std::cout << std::string(indent, ' ') << "Университет: " << name << "\n";

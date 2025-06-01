@@ -1,0 +1,492 @@
+{
+    "type": "University",
+    "name": "BSTU V.G. Shukhov",
+    "children": [
+        {
+            "type": "Institute",
+            "name": "IITUS",
+            "children": [
+                {
+                    "type": "Department",
+                    "name": "POVTAS",
+                    "children": [
+                        {
+                            "type": "Group",
+                            "name": "KB-231",
+                            "children": [
+                                {
+                                    "type": "Student",
+                                    "name": "Davydenko Kirill",
+                                    "children": [
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Information theory",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "FOPTSZI",
+                                            "cgt": {
+                                                "type": "CalcGraphTask",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    4
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Operations research",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 5
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Student",
+                                    "name": "Kolesov Andrew",
+                                    "children": [
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Information theory",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    4,
+                                                    5,
+                                                    4,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "FOPTSZI",
+                                            "cgt": {
+                                                "type": "CalcGraphTask",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    4,
+                                                    5,
+                                                    4
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Operations research",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    4,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 5
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Student",
+                                    "name": "Maslov Ivan",
+                                    "children": [
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Information theory",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    4,
+                                                    4,
+                                                    5,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "FOPTSZI",
+                                            "cgt": {
+                                                "type": "CalcGraphTask",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    4,
+                                                    5,
+                                                    4
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Operations research",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    4,
+                                                    4,
+                                                    5
+                                                ]
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 5
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Student",
+                                    "name": "Ushkov Vadim",
+                                    "children": [
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Information theory",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    5
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "FOPTSZI",
+                                            "cgt": {
+                                                "type": "CalcGraphTask",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    4,
+                                                    4,
+                                                    5
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 1
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Operations research",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    5,
+                                                    5,
+                                                    5,
+                                                    4,
+                                                    5,
+                                                    4
+                                                ]
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 5
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Group",
+                            "name": "KB-232",
+                            "children": [
+                                {
+                                    "type": "Student",
+                                    "name": "123",
+                                    "children": [
+                                        {
+                                            "type": "Discipline",
+                                            "name": "OOP",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            },
+                                            "cp": {
+                                                "type": "CourseProject",
+                                                "name": "",
+                                                "mark": 0
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 0
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Operations research",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            },
+                                            "exam": {
+                                                "type": "Exam",
+                                                "name": "",
+                                                "mark": 0
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "Information theory",
+                                            "labs": {
+                                                "type": "LaboratoryWorks",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 0
+                                            }
+                                        },
+                                        {
+                                            "type": "Discipline",
+                                            "name": "FOPTSZI",
+                                            "cgt": {
+                                                "type": "CalcGraphTask",
+                                                "system": "Пятибальная система",
+                                                "marks": [
+                                                    0,
+                                                    0,
+                                                    0
+                                                ]
+                                            },
+                                            "test": {
+                                                "type": "Test",
+                                                "name": "",
+                                                "mark": 0
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Group",
+                            "name": "VT-231",
+                            "children": []
+                        },
+                        {
+                            "type": "Group",
+                            "name": "VT-232",
+                            "children": []
+                        },
+                        {
+                            "type": "Group",
+                            "name": "PV-231",
+                            "children": []
+                        },
+                        {
+                            "type": "Group",
+                            "name": "PV-232",
+                            "children": []
+                        },
+                        {
+                            "type": "Group",
+                            "name": "PV-233",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "type": "Department",
+                    "name": "PI",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "TK",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "IT",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "Institute",
+            "name": "ISI",
+            "children": [
+                {
+                    "type": "Department",
+                    "name": "AK",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "MiTM",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "SiTH",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "SM",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "SMiSM",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "TiV",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "type": "Institute",
+            "name": "TTI",
+            "children": [
+                {
+                    "type": "Department",
+                    "name": "AiJD",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "PTiDM",
+                    "children": []
+                },
+                {
+                    "type": "Department",
+                    "name": "TKMM",
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

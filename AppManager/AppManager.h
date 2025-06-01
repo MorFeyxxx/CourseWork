@@ -12,9 +12,7 @@
 #include "../Department/Department.h"
 #include "../Group/Group.h"
 #include "../Student/Student.h"
-#include "../Discipline/DisciplinesOf2Course/DiscsOfGroup2Course.h"
-
-std::string path = "DataBase of BGTU.json";
+#include "../Discipline/DisciplinesOf2Course/DiscsOfGroup2Course/DiscsOfGroup2Course.h"
 
 class AppManager {
     std::shared_ptr<ComponentBase> curr_ptr;
@@ -33,7 +31,7 @@ private:
 
     void change_mark();
 
-    bool correct_input(int& input);
+    int correct_input();
     bool correct_input_yes_no();
     void correct_input_assess_sys(std::string& assess);
     size_t correct_input_count();

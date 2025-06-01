@@ -3,7 +3,7 @@
 
 #include "../AssessmentSystem.h"
 
-class FivePointSystem : public AssessmentSystem {
+class FivePointSystem: public AssessmentSystem {
 public:
     FivePointSystem();
 

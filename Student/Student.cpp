@@ -1,7 +1,7 @@
 #include "Student.h"
 #include "../Discipline/Discipline.h"
 
-Student::Student(const std::string& name) : ComponentBase(name, "Student") {}
+Student::Student(const std::string& name): ComponentBase(name, "Student") {}
 
 void Student::print(int indent = 0) const {
     std::cout << std::string(indent, ' ') << "Студент: " << name << "\n";

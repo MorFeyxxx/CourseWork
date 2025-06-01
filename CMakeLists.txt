@@ -43,6 +43,8 @@ add_executable(CourseWork main.cpp
         Discipline/Discipline.h
         Discipline/Discipline.cpp
         Discipline/DisciplinesOf2Course/DisciplinesOf2Course.h
-        Discipline/DisciplinesOf2Course/DiscsOfGroup2Course.h
+        Discipline/DisciplinesOf2Course/DiscsOfGroup2Course/DiscsOfGroup2Course.h
         AppManager/AppManager.h
-        AppManager/AppManager.cpp)
+        AppManager/AppManager.cpp
+        Discipline/DisciplinesOf2Course/DisciplineOf2Course.cpp
+        Discipline/DisciplinesOf2Course/DiscsOfGroup2Course/DiscsOfGroup2Course.cpp)

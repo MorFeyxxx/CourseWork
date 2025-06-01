@@ -1,7 +1,7 @@
 #include "FivePointSystem.h"
 #include "cmath"
 
-FivePointSystem::FivePointSystem() : AssessmentSystem("Пятибальная система", 2, 5) {}
+FivePointSystem::FivePointSystem(): AssessmentSystem("Пятибальная система", 2, 5) {}
 
 std::pair<bool, int> FivePointSystem::evaluate(const std::vector<int>& marks) const {
     if (marks.empty()) {

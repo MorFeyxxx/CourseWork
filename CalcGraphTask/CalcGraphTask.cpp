@@ -19,7 +19,8 @@ std::shared_ptr<AssessmentSystem> CalcGraphTask::get_system() const {
 
 void CalcGraphTask::set_mark(int index, int mark) {
     if (index-1 >= marks.size()) {
-        throw std::out_of_range("Нет такого расчетно-графического задания!");
+        std::cout << "Нет такого расчетно-графического задания!" << std::endl;
+        return;
     }
 
     if(assessment_system->validate_mark(mark)) {

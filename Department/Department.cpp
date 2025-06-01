@@ -1,7 +1,7 @@
 #include "Department.h"
 #include "../Group/Group.h"
 
-Department::Department(const std::string& name) : ComponentBase(name, "Department") {}
+Department::Department(const std::string& name): ComponentBase(name, "Department") {}
 
 void Department::print(int indent = 0) const {
     std::cout << std::string(indent, ' ') << "Кафедра: " << name << "\n";

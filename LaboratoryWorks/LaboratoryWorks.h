@@ -7,7 +7,7 @@
 #include <memory>
 #include <iostream>
 
-class LaboratoryWorks : public ComponentBase {
+class LaboratoryWorks: public ComponentBase {
 protected:
     std::shared_ptr<AssessmentSystem> assessment_system;
     std::vector<int> marks;

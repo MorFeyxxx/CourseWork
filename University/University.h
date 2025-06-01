@@ -3,7 +3,7 @@
 
 #include "../ComponentBase/ComponentBase.h"
 
-class University : public ComponentBase {
+class University: public ComponentBase {
 public:
     explicit University(const std::string& name);
 

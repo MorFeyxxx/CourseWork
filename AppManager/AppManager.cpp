@@ -1,54 +1,54 @@
 #include "AppManager.h"
 
+std::string path = "DataBase of BGTU.json";
+
 void AppManager::run() {
-        Database& db = Database::get_instance();
-        db.load(path);
+    Database& db = Database::get_instance();
+    db.load(path);
 
-        curr_ptr = db.data();
+    curr_ptr = db.data();
 
-        while (true) {
-            std::cout << std::endl;
-            curr_ptr->print_children(0);
+    while (true) {
+        std::cout << std::endl;
+        curr_ptr->print_children(0);
 
-            bool changed = false;
+        bool changed = false;
 
-            if(curr_ptr->get_type() != "Discipline") {
-                std::cout << "\n1. Перейти в ...\n2. Добавить объект\n3. Удалить объект\n4. Вернуться\n5. Выход" << std::endl;
-                int choice;
-                std::cout << "\nВыбор операции: ";
-                if(!correct_input(choice)) {
-                    continue;
-                }
+        if(curr_ptr->get_type() != "Discipline") {
+            std::cout << "\n1. Перейти в ...\n2. Добавить объект\n3. Удалить объект\n4. Вернуться\n5. Выход" << std::endl;
 
-                switch (choice) {
-                    case 1: go_over(); break;
-                    case 2: append(); changed = true; break;
-                    case 3: remove(); changed = true; break;
-                    case 4:
-                        if(curr_ptr->get_type() != "University") {
-                            curr_ptr = curr_ptr->get_parent();
-                        } else {
-                            std::cout << "Вернуться нельзя!" << std::endl;
-                        }
-                        break;
-                    case 5: return;
-                    default: std::cout << "====== Неверный ввод! ======" << std::endl;
-                }
-            } else {
-                bool exit = false;
+            std::cout << "\nВыбор операции: ";
+            int choice = correct_input();
 
-                discipline_management(db, exit);
-
-                if(exit) {
+            switch (choice) {
+                case 1: go_over(); break;
+                case 2: append(); changed = true; break;
+                case 3: remove(); changed = true; break;
+                case 4:
+                    if(curr_ptr->get_type() != "University") {
+                        curr_ptr = curr_ptr->get_parent();
+                    } else {
+                        std::cout << "Вернуться нельзя!" << std::endl;
+                    }
                     break;
-                }
+                case 5: return;
+                default: std::cout << "====== Неверный ввод! ======" << std::endl;
             }
+        } else {
+            bool exit = false;
 
-            if(changed) {
-                db.save(path);
+            discipline_management(db, exit);
+
+            if(exit) {
+                break;
             }
         }
+
+        if(changed) {
+            db.save(path);
+        }
     }
+}
 
 void AppManager::discipline_management(Database& db, bool& exit) {
     while (true) {
@@ -56,11 +56,9 @@ void AppManager::discipline_management(Database& db, bool& exit) {
         curr_ptr->print(0);
 
         std::cout << "\n1. Изменить оценку\n2. Удалить объект\n3. Вернуться\n4. Выход" << std::endl;
-        int choice;
+
         std::cout << "\nВыбор операции: ";
-        if (!correct_input(choice)) {
-            continue;
-        }
+        int choice = correct_input();
 
         switch (choice) {
             case 1: change_mark(); db.save(path); break;
@@ -93,8 +91,8 @@ void AppManager::go_over() {
 }
 void AppManager::append() {
     std::string name;
-
     std::string type = curr_ptr->get_type();
+
     if(type == "University") {
         std::cout << "Введите название для института: ";
         std::getline(std::cin, name);
@@ -141,7 +139,7 @@ std::shared_ptr<Discipline> AppManager::create_disc(std::string &name) {
     DisciplineConfig config;
     std::cout << "Настройка дисциплины:" << std::endl;
 
-    std::cout << "Будут лабораторные работы? Да(1)/Нет(0): ";
+    std::cout << "Будут лабораторные работы? Yes/No: ";
     config.has_labs = correct_input_yes_no();
     if(config.has_labs) {
         std::cout << "Какая система оценивания? FivePoint/TEST: ";
@@ -155,7 +153,7 @@ std::shared_ptr<Discipline> AppManager::create_disc(std::string &name) {
         config.count_labs = correct_input_count();
     }
 
-    std::cout << "\nБудут РГЗ? Да(1)/Нет(0): ";
+    std::cout << "\nБудут РГЗ? Yes/No: ";
     config.has_cgt = correct_input_yes_no();
     if(config.has_cgt) {
         std::cout << "Какая система оценивания? FivePoint/TEST: ";
@@ -169,19 +167,19 @@ std::shared_ptr<Discipline> AppManager::create_disc(std::string &name) {
         config.count_cgt = correct_input_count();
     }
 
-    std::cout << "\nБудет курсовой проект? Да(1)/Нет(0): ";
+    std::cout << "\nБудет курсовой проект? Yes/No: ";
     config.has_cp = correct_input_yes_no();
     if(config.has_cp) {
         config.mark_cp = MarkStatus::Fail;
     }
 
-    std::cout << "\nБудет зачет? Да(1)/Нет(0): ";
+    std::cout << "\nБудет зачет? Yes/No: ";
     config.has_test = correct_input_yes_no();
     if(config.has_test) {
         config.mark_test = MarkStatus::Fail;
     }
 
-    std::cout << "\nБудет экзамен? Да(1)/Нет(0): ";
+    std::cout << "\nБудет экзамен? Yes/No: ";
     config.has_exam = correct_input_yes_no();
     if(config.has_exam) {
         config.mark_exam = MarkStatus::Fail;
@@ -207,18 +205,17 @@ void AppManager::change_mark() {
     std::string choice;
     std::getline(std::cin, choice);
 
+    int mark;
     if((choice == "LB") || choice == "CGT") {
-        int index;
-        int mark;
         if(choice == "LB") {
             std::cout << "Введите номер ЛБ: ";
         } else {
             std::cout << "Введите номер РГЗ: ";
         }
 
-        std::cin >> index;
+        int index = correct_input();
         std::cout << "Введите оценку: ";
-        std::cin >> mark;
+        mark = correct_input();
 
         if(choice == "LB") {
             curr_ptr->change_mark_lab(index, mark);
@@ -227,9 +224,8 @@ void AppManager::change_mark() {
         }
     } else {
         if(choice == "CP" || choice == "TEST" || choice == "EXAM") {
-            int mark;
             std::cout << "Введите оценку: ";
-            std::cin >> mark;
+            mark = correct_input();
 
             if(choice == "CP") {
                 curr_ptr->change_mark_cp(mark);
@@ -246,15 +242,18 @@ void AppManager::change_mark() {
     }
 }
 
-bool AppManager::correct_input(int& input) {
-    if (!(std::cin >> input)) {
+int AppManager::correct_input() {
+    int input;
+    while (true) {
+        if (std::cin >> input) {
+            std::cin.ignore(10000, '\n');
+            return input;
+        }
+
         std::cout << "Ошибка ввода. Попробуйте снова.\n";
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        return false;
     }
-    std::cin.ignore(10000, '\n');
-    return true;
 }
 bool AppManager::correct_input_yes_no() {
     std::string answer;
@@ -302,11 +301,10 @@ void AppManager::remove() {
     std::string name;
     std::getline(std::cin, name);
 
-    int choice;
     for(auto &child: curr_ptr->get_children()) {
         if(name == child->get_name()) {
-            std::cout << "Вы уверены, что хотите удалить " << name << "? yes(1)/no(0): ";
-            if(correct_input(choice) && choice == 1) {
+            std::cout << "Вы уверены, что хотите удалить " << name << "? Yes/No: ";
+            if(correct_input_yes_no()) {
                 curr_ptr->remove(child);
             }
 
@@ -338,6 +336,7 @@ std::string AppManager::shorten_group(const std::string& group_name) {
 
     return group_name;
 }
+
 void AppManager::add_disc(std::shared_ptr<ComponentBase> st, std::vector<DisciplineConfig> discs) {
     for(auto con_disc: discs) {
         auto disc = std::make_shared<Discipline>(con_disc.name, con_disc);

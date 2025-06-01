@@ -19,7 +19,8 @@ std::shared_ptr<AssessmentSystem> LaboratoryWorks::get_system() const {
 
 void LaboratoryWorks::set_mark(int index, int mark) {
     if (index-1 >= marks.size()) {
-        throw std::out_of_range("Нет такой лабораторной работы!");
+        std::cout << "Нет такой лабораторной работы!" << std::endl;
+        return;
     }
 
     if(assessment_system->validate_mark(mark)) {

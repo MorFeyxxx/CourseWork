@@ -1,6 +1,6 @@
 #include "Discipline.h"
 
-Discipline::Discipline(const std::string& name, const DisciplineConfig& config) : ComponentBase(name, "Discipline") {
+Discipline::Discipline(const std::string& name, const DisciplineConfig& config): ComponentBase(name, "Discipline") {
     if (config.has_labs && config.lab_system) {
         labs = LaboratoryWorks(config.lab_system, config.count_labs);
     }
