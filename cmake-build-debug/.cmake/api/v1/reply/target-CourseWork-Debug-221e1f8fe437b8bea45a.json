@@ -145,7 +145,8 @@
 				27,
 				29,
 				31,
-				33
+				33,
+				35
 			]
 		}
 	],
@@ -342,6 +343,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "CalcGraphTask/CalcGraphTask.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Discipline/DisciplineConfig.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
