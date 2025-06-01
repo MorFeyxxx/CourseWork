@@ -39,4 +39,6 @@ add_executable(CourseWork main.cpp
         LaboratoryWorks/LaboratoryWorks.cpp
         CalcGraphTask/CalcGraphTask.h
         CalcGraphTask/CalcGraphTask.cpp
-        Discipline/DisciplineConfig.h)
+        Discipline/DisciplineConfig.h
+        Discipline/Discipline.h
+        Discipline/Discipline.cpp)
