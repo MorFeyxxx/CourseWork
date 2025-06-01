@@ -1,5 +1,5 @@
 # ninja log v6
-224	1169	7704752425923552	CMakeFiles/CourseWork.dir/Student/Student.cpp.obj	2bea4a2a6fc49299
+8	3640	7704963133455588	CMakeFiles/CourseWork.dir/Student/Student.cpp.obj	2bea4a2a6fc49299
 190	5647	7704752425593470	CMakeFiles/CourseWork.dir/ComponentBase/ComponentBase.cpp.obj	be93836ff8313b32
 64	750	7704809448848596	CMakeFiles/CourseWork.dir/AssessmentSystem/PassFailSystem/PassFailSystem.cpp.obj	6f736e27d72575a9
 218	5657	7704752425873543	CMakeFiles/CourseWork.dir/Group/Group.cpp.obj	a16686e7eeed03c
@@ -16,9 +16,7 @@
 86	3400	7704883545759327	CMakeFiles/CourseWork.dir/CalcGraphTask/CalcGraphTask.cpp.obj	8828b29f9d9eef3c
 28	3250	7704895397260496	CMakeFiles/CourseWork.dir/Exam/Exam.cpp.obj	3a5eb767624fb6fd
 184	3996	7704804917876166	CMakeFiles/CourseWork.dir/LaboratoryWorks/LaboratoryWorks.cpp.obj	4683329d0f8efa6a
-2	743	7704963132875455	build.ninja	e38563f318ecb228
+3	449	7704964542730954	build.ninja	e38563f318ecb228
 9	2460	7704895353502718	CMakeFiles/CourseWork.dir/MarkAndAssessSys/MarkAndAssessSys.cpp.obj	c8d84c62c3384e57
-3	449	7704963132875455	build.ninja	e38563f318ecb228
-8	3640	7704963133455588	CMakeFiles/CourseWork.dir/Student/Student.cpp.obj	2bea4a2a6fc49299
 22	4206	7704963133595612	CMakeFiles/CourseWork.dir/Discipline/Discipline.cpp.obj	a64d326b2432d0f8
 4206	10194	7704963175425531	CourseWork.exe	2705db48857e2a23
