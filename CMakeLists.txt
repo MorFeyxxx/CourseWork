@@ -36,4 +36,6 @@ add_executable(CourseWork main.cpp
         CourseProject/CourseProject.h
         CourseProject/CourseProject.cpp
         LaboratoryWorks/LaboratoryWorks.h
-        LaboratoryWorks/LaboratoryWorks.cpp)
+        LaboratoryWorks/LaboratoryWorks.cpp
+        CalcGraphTask/CalcGraphTask.h
+        CalcGraphTask/CalcGraphTask.cpp)
