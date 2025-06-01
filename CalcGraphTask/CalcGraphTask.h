@@ -15,8 +15,8 @@ protected:
 public:
     CalcGraphTask(const std::shared_ptr<AssessmentSystem> system, size_t count);
 
-    void add_lab();
-    void remove_lab();
+    void add_cgt();
+    void remove_cgt();
 
     std::shared_ptr<AssessmentSystem> get_system() const;
 
